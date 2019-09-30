@@ -24,3 +24,39 @@
 .text-center {
   text-align: center !important;
 }
+
+.greeting-container {
+  display: flex;
+  flex-direction: column;
+  line-height: initial;
+  margin-top: 48px;
+  padding: 48px;
+}
+
+.greeting-sm {
+  font-size: 1.5em;
+  margin-bottom: -16px;
+}
+
+.greeting-main {
+  font-size: 5em;
+}
+
+.greeting-second {
+  font-size: 4em;
+  color: #a9a5a5;
+}
+
+@media only screen and (max-width: 576px) {
+  .greeting-container {
+    padding: 32px;
+    font-size: 60%
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  .greeting-container {
+    padding: 32px;
+    font-size: 80%
+  }
+}
