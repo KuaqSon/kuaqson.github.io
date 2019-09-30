@@ -25,12 +25,16 @@
   text-align: center !important;
 }
 
+.container {
+  padding-left: 96px;
+  padding-right: 96px;
+}
+
 .greeting-container {
   display: flex;
   flex-direction: column;
   line-height: initial;
-  margin-top: 48px;
-  padding: 48px;
+  margin-top: 96px;
 }
 
 .greeting-sm {
@@ -47,16 +51,37 @@
   color: #a9a5a5;
 }
 
+.about-container {
+  padding-top: 48px;
+}
+
 @media only screen and (max-width: 576px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .greeting-container {
     padding: 32px;
-    font-size: 60%
+    font-size: 60%;
   }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 576px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .greeting-container {
     padding: 32px;
-    font-size: 80%
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
