@@ -1,11 +1,12 @@
 import React from "react";
 import { Box, Text, Heading } from "grommet";
+import SectionTitle from "./SectionTitle";
 
 function Projects() {
   return (
-    <Box height="100vh" id="projects">
+    <Box height={{ min: "100vh" }} id="projects">
       <div className="container">
-        <Text>Here're some funny projects made by me.</Text>
+        {SectionTitle("Here're some funny projects made by me")}
       </div>
     </Box>
   );
