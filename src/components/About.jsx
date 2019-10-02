@@ -38,30 +38,30 @@ function About() {
                   </Text>
                   <div className="tech-types">
                     <Box width={{ min: "220px" }} pad={{ vertical: "small" }}>
-                      <Box direction="row" gap="small">
+                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
                         <Html5 /> Javascript
                       </Box>
-                      <Box direction="row" gap="small">
+                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
                         <Css3 /> HTML & CSS
                       </Box>
-                      <Box direction="row" gap="small">
+                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
                         <Reactjs /> ReactJs
                       </Box>
-                      <Box direction="row" gap="small">
+                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
                         <Shield /> Angular
                       </Box>
                     </Box>
                     <Box width={{ min: "220px" }} pad={{ vertical: "small" }}>
-                      <Box direction="row" gap="small">
+                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
                         <Windows /> ASP.NET & ASP.NET Core
                       </Box>
-                      <Box direction="row" gap="small">
+                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
                         <Node /> NodeJs
                       </Box>
-                      <Box direction="row" gap="small">
+                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
                         <SettingsOption /> ExpressJs
                       </Box>
-                      <Box direction="row" gap="small">
+                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
                         <Diamond /> Ruby on Rails
                       </Box>
                     </Box>
