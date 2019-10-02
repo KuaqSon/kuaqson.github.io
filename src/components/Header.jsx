@@ -3,7 +3,7 @@ import { Anchor, Box, Text, ResponsiveContext, Menu } from "grommet";
 import {
   ContactInfo,
   Code,
-  Channel,
+  Desktop,
   DocumentUser,
   FormDown
 } from "grommet-icons";
@@ -25,7 +25,7 @@ const CollapsedNav = () => (
               About me
             </Box>
           ),
-          onClick: () => console.log("About me"),
+          onClick: () => goToSection("#about"),
           icon: (
             <Box pad={{ vertical: "16px", left: "32px", right: "16px" }}>
               <DocumentUser size="medium" />
@@ -38,7 +38,7 @@ const CollapsedNav = () => (
               Projects
             </Box>
           ),
-          onClick: () => console.log("project"),
+          onClick: () => goToSection("#projects"),
           icon: (
             <Box pad={{ vertical: "16px", left: "32px", right: "16px" }}>
               <Code size="medium" />
@@ -51,7 +51,7 @@ const CollapsedNav = () => (
               Contact
             </Box>
           ),
-          onClick: () => console.log("contact"),
+          onClick: () => goToSection("#contact"),
           icon: (
             <Box pad={{ vertical: "16px", left: "32px", right: "16px" }}>
               <ContactInfo size="medium" />
@@ -61,7 +61,7 @@ const CollapsedNav = () => (
       ]}
     >
       <Box direction="row" gap="small" pad="medium" align="center">
-        <Channel color="brand" size="large" />
+        <Desktop color="brand" size="large" />
         <Text weight="bold" size="large">
           Son Nguyen
         </Text>
@@ -81,7 +81,7 @@ const ExpandedNav = () => (
     pad={{ vertical: "medium", horizontal: "medium" }}
   >
     <Box direction="row" gap="small" align="center">
-      <Channel color="brand" size="large" />
+      <Desktop color="brand" size="large" />
       <Text weight="bold" size="large">
         Son Nguyen
       </Text>
@@ -109,6 +109,12 @@ const ExpandedNav = () => (
     </Box>
   </Box>
 );
+
+const goToSection = section => {
+  setTimeout(() => {
+    window.location.replace(section);
+  }, 0);
+};
 
 function Header() {
   return (

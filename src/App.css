@@ -52,7 +52,12 @@
 }
 
 .about-container {
-  padding-top: 48px;
+  /* padding-bottom: 48px; */
+}
+
+.tech-types {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 576px) {

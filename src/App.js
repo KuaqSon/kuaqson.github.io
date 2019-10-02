@@ -12,7 +12,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <Grommet>
+    <Grommet plain>
       <Header />
       <Home />
       <About />
