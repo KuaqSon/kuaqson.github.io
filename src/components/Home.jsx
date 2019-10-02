@@ -3,7 +3,7 @@ import { Box, Text, Heading } from "grommet";
 
 function Home() {
   return (
-    <Box height="100vh">
+    <Box height={{min: "100vh"}}>
       <Box animation={{type: "zoomOut", duration: 1000, size: "large"}}>
         <div className="container greeting-container">
           <div className="greeting-sm">Hello there, my name is</div>
