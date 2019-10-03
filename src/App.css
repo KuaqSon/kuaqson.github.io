@@ -69,12 +69,26 @@
 }
 
 .about-container {
-  /* padding-bottom: 48px; */
+  padding-top: 48px;
 }
 
 .tech-types {
   display: flex;
   flex-wrap: wrap;
+}
+
+.prj-item {
+  position: relative;
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prj-img-cont {
+}
+
+.prj-img {
+  max-width: 600px;
 }
 
 @media only screen and (max-width: 576px) {
