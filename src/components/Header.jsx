@@ -12,7 +12,6 @@ const CollapsedNav = () => (
   <Box
     direction="row"
     justify="center"
-    pad={{ vertical: "medium", horizontal: "medium" }}
   >
     <Menu
       plain
@@ -78,7 +77,7 @@ const ExpandedNav = () => (
     alignSelf="center"
     align="center"
     gap="medium"
-    pad={{ vertical: "medium", horizontal: "medium" }}
+    pad={{ vertical: "small", horizontal: "medium" }}
   >
     <Box direction="row" gap="small" align="center">
       <Desktop color="brand" size="large" />
