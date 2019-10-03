@@ -25,6 +25,23 @@
   text-align: center !important;
 }
 
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: top 0.6s;
+  background-color: #fff;
+  z-index: 500;
+}
+
+.navbar--hidden {
+  top: -100px;
+}
+
+.navbar--sahdow {
+  box-shadow: rgba(142, 142, 142, 0.19) 0px 10px 30px -10px;
+}
+
 .container {
   padding-left: 96px;
   padding-right: 96px;

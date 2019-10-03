@@ -14,7 +14,7 @@ function App() {
   return (
     <Grommet plain>
       <Header />
-      <Box width={{ max: "1500px" }} margin={{ horizontal: "auto" }}>
+      <Box width={{ max: "1500px" }} margin={{ horizontal: "auto", top: "100px" }}>
         <Home />
         <About />
         <Projects />
