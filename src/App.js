@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Grommet } from "grommet";
+import { Grommet, Box } from "grommet";
 
 // Component
 import Header from "./components/Header";
@@ -14,10 +14,12 @@ function App() {
   return (
     <Grommet plain>
       <Header />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
+      <Box width={{ max: "1500px" }} margin={{ horizontal: "auto" }}>
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+      </Box>
       <Footer />
     </Grommet>
   );

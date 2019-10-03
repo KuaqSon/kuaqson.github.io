@@ -20,7 +20,7 @@ function About() {
       <Box height={{ min: "100vh" }} id="about">
         <div className="container about-container">
           {SectionTitle("A little bit about me")}
-          <Box direction="row-responsive" align="start" gap="large">
+          <Box direction="row-responsive" align="start" gap="large" justify="between">
             <Box>
               <Box width={{ max: "768px" }}>
                 <Text>
