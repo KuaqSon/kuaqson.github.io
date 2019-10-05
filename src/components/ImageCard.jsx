@@ -14,7 +14,7 @@ const trans = (x, y, s) =>
 function ImageCard() {
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
-    config: { mass: 5, tension: 350, friction: 40 }
+    config: { mass: 4, tension: 100, friction: 40 }
   }));
   return (
     <animated.div
@@ -24,7 +24,7 @@ function ImageCard() {
     >
       <Box direction="row" justify="center">
         <Box height="medium" width="medium" elevation="large" round="large">
-          <Image fit="cover" src={avaimg} />
+          <Image fit="cover" src={avaimg} className="avatar-img" />
         </Box>
       </Box>
     </animated.div>

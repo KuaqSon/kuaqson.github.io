@@ -78,6 +78,10 @@
   flex-wrap: wrap;
 }
 
+.avatar-img {
+  border-radius: 25px;
+}
+
 @media only screen and (max-width: 576px) {
   .container {
     padding-left: 32px;
