@@ -18,7 +18,7 @@ function About() {
   return (
     <Fade bottom>
       <Box height={{ min: "100vh" }} id="about">
-        <div className="container about-container">
+        <div className="container section-container">
           {SectionTitle("A little bit about me")}
           <Box
             direction="row-responsive"
