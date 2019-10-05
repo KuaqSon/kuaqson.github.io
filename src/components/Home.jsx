@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Heading } from "grommet";
+import { Box } from "grommet";
 
 function Home() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Image, Anchor } from "grommet";
+import { Box, Anchor } from "grommet";
 import SectionTitle from "./SectionTitle";
 import Fade from "react-reveal/Fade";
 import "../stylesheets/project.css";
