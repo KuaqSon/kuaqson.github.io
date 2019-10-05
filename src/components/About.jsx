@@ -1,7 +1,6 @@
 import React from "react";
-import { Box, Text, Grid, Image } from "grommet";
+import { Box, Text } from "grommet";
 import SectionTitle from "./SectionTitle";
-import avaimg from "../images/avatar-1.jpg";
 import Fade from "react-reveal/Fade";
 import {
   Html5,
@@ -13,6 +12,7 @@ import {
   Windows,
   Css3
 } from "grommet-icons";
+import ImageCard from "./ImageCard";
 
 function About() {
   return (
@@ -20,7 +20,12 @@ function About() {
       <Box height={{ min: "100vh" }} id="about">
         <div className="container about-container">
           {SectionTitle("A little bit about me")}
-          <Box direction="row-responsive" align="start" gap="large" justify="between">
+          <Box
+            direction="row-responsive"
+            align="start"
+            gap="large"
+            justify="between"
+          >
             <Box>
               <Box width={{ max: "768px" }}>
                 <Text>
@@ -38,30 +43,62 @@ function About() {
                   </Text>
                   <div className="tech-types">
                     <Box width={{ min: "220px" }} pad={{ vertical: "small" }}>
-                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
+                      <Box
+                        direction="row"
+                        gap="small"
+                        pad={{ vertical: "xsmall" }}
+                      >
                         <Html5 /> Javascript
                       </Box>
-                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
+                      <Box
+                        direction="row"
+                        gap="small"
+                        pad={{ vertical: "xsmall" }}
+                      >
                         <Css3 /> HTML & CSS
                       </Box>
-                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
+                      <Box
+                        direction="row"
+                        gap="small"
+                        pad={{ vertical: "xsmall" }}
+                      >
                         <Reactjs /> ReactJs
                       </Box>
-                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
+                      <Box
+                        direction="row"
+                        gap="small"
+                        pad={{ vertical: "xsmall" }}
+                      >
                         <Shield /> Angular
                       </Box>
                     </Box>
                     <Box width={{ min: "220px" }} pad={{ vertical: "small" }}>
-                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
+                      <Box
+                        direction="row"
+                        gap="small"
+                        pad={{ vertical: "xsmall" }}
+                      >
                         <Windows /> ASP.NET & ASP.NET Core
                       </Box>
-                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
+                      <Box
+                        direction="row"
+                        gap="small"
+                        pad={{ vertical: "xsmall" }}
+                      >
                         <Node /> NodeJs
                       </Box>
-                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
+                      <Box
+                        direction="row"
+                        gap="small"
+                        pad={{ vertical: "xsmall" }}
+                      >
                         <SettingsOption /> ExpressJs
                       </Box>
-                      <Box direction="row" gap="small" pad={{vertical: "xsmall"}}>
+                      <Box
+                        direction="row"
+                        gap="small"
+                        pad={{ vertical: "xsmall" }}
+                      >
                         <Diamond /> Ruby on Rails
                       </Box>
                     </Box>
@@ -70,16 +107,7 @@ function About() {
               </Fade>
             </Box>
             <Fade bottom>
-              <Box direction="row" justify="center">
-                <Box
-                  height="medium"
-                  width="medium"
-                  elevation="large"
-                  round="large"
-                >
-                  <Image fit="cover" src={avaimg} />
-                </Box>
-              </Box>
+              <ImageCard />
             </Fade>
           </Box>
         </div>
