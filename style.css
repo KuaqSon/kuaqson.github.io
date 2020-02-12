@@ -14,7 +14,8 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   min-height: 100vh;
-  overflow: hidden;
+  overflow: auto;
+  margin: 0;
 
   font-family: Lucida Sans Typewriter, Lucida Console, monaco, Bitstream Vera Sans Mono, monospace;
 }
@@ -67,7 +68,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 24px 0;
   margin: auto;
   max-width: 120px;
 }
